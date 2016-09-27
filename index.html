@@ -1,10 +1,127 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Oakton Computer Science Club</title>
+
+    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!--[if lt IE 9]>
+      <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/src/html5shiv.js"></script>
+      <script src="https://raw.githubusercontent.com/scottjehl/Respond/master/dest/respond.min.js"></script>
+    <![endif]-->
   </head>
-  
+
   <body>
-    Hello World
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://oaktoncsclub.github.io">
+            <span class="hidden-xs visible-sm visible-md visible-lg">Oakton CS Club</span>
+            <span class="visible-xs hidden-sm hidden-md hidden-lg">
+              <img alt="OCS" height="40px" height="40px" style="margin-top: -10px;" src="https://scontent.xx.fbcdn.net/v/t1.0-9/12042658_840156849438614_8362724415686512354_n.jpg?oh=08c96da66c22849d806465db300ff81b&oe=586CEBB0">
+            </span>
+          </a>
+        </div>
+        <!-- Save for later
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#">Events</a>
+            </li>
+            <li>
+              <a href="#">Resources</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Information
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Q & A</a>
+                </li>
+                <li>
+                  <a href="#">Report</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">Leadership</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>-->
+    </nav>
+
+    <header class="container text-center">
+      <aside id="banner" class="bg-warning" style="padding:15px 0;">
+        <strong>Attention: We don't have a meeting this Wednesday, <time datetime="2016-09-28">Sep. 28</time></strong>
+        <!--<img src="banner.png" alt="Event Description" />-->
+        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true" id="closeHeader"></span>
+      </aside>
+    </header>
+
+    <main class="container">
+      <!-- Save for later
+      <section id="curevent">
+        <div id="#curevent-image-holder" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="..." alt="...">
+              <div class="carousel-caption">
+                ...
+              </div>
+            </div>
+            <div class="item">
+              <img src="..." alt="...">
+              <div class="carousel-caption">
+                ...
+              </div>
+            </div>
+          </div>
+          <ol class="carousel-indicators">
+            <li data-target="#curevent-image-holder" data-slide-to="0" class="active"></li>
+            <li data-target="#curevent-image-holder" data-slide-to="1"></li>
+            <li data-target="#curevent-image-holder" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </section>-->
+
+      <section class="text-center">
+        <h2>Sign Up Now!</h2>
+        <figure>
+          <a href="http://bit.ly/2dcx6ZF">
+            <img src="https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Fbit.ly%2F2dcx6ZF&chs=180x180&choe=UTF-8&chld=L|2" />
+          </a>
+          <figcaption>
+            Click or Scan the QR code to fill the Sign Up From <br /> Having trouble? Try
+            <a href="http://bit.ly/2dcx6ZF">http://bit.ly/2dcx6ZF</a>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer class="hidden-xs">
+      <div class="text-center">
+        Copyright (c) <time>2016</time> Oakton Computer Science Club. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
   </body>
+
 </html>
