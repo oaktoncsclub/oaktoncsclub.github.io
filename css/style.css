@@ -4,11 +4,11 @@ article, aside, figure, figcaption, footer, header, main, nav, section {
 
 header {
     padding-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
 }
 
 section, main, article {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 footer {
