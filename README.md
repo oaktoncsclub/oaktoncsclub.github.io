@@ -36,3 +36,5 @@ Website for Oakton High School Computer Science Club(OCS)
 		- Indent and use a blank line to separate `<head>`, `<body>`
 	- CSS, JS
 		- 4 spaces
+		
+Using Atom IDE is reccomended
