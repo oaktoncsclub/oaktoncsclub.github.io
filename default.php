@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script async defer src="https://buttons.github.io/buttons.js"></script>
   <style>
   </style>
 </head>
@@ -84,21 +85,48 @@
 
     </div>
     <div class="section" style="background-color:#90CAF9;">
-      <div class="card horizontal">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="ira.jpg">
+      <div class="row">
+        <nav style="height:8%;"><div class="blue nav-wrapper"><a style="position:relative; left:40%;" href="#whatwedo" class="brand-logo">What we do</a></div></nav>
+        <br/><br/>
+        <div class="col s12">
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="https://code.vmware.com/wp-content/uploads/sites/13/2016/08/hackathon-graphic.png">
+              <span class="card-title blue">Hackathon Competitions</span>
+            </div>
+            <div class="card-content">
+              <p>We love competing in Hackathons! If you are running a hackathon, or want us to participate in one, contact us!</p>
+            </div>
+          </div>
         </div>
-        <div class="card-content activator">
-          <span class="card-title grey-text text-darken-4">Work History</span>
-          <p>I started and ran my own lemonade stand during various time in various summer vacations. Click for more.</p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Work History<i class="right">X</i></span>
-          <p>I also sell art, fish, and origami using the PrizePoints currency to my brother, parents, and friends</p>
+
+        <div class="col s12">
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="http://www.gandhfinancial.com/img/~www.gandhfinancial.com/non%20profit.jpg">
+              <span class="card-title blue">Making a difference</span>
+            </div>
+            <div class="card-content">
+              <p>We love helping non-profit organisations (501-3(c)) build their online prsence and utilize technology to help them run more efficiently </p>
+            </div>
+          </div>
         </div>
       </div>
+      </div>
+    <div class="section" style="background-color:#BBDEFB;">
+      <nav style="height:8%;"><div class="blue nav-wrapper"><a style="position:relative; left:40%;" href="#contact" class="brand-logo">Contact</a></div></nav>
+      <br/><br/>
+<div class="g-plus" data-action="share" data-annotation="bubble" data-height="24" data-href="https://plus.google.com/110148570734833554470"></div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+    <div style="position:absolute; bottom:5%;">Designed by <a class="github-button" href="https://github.com/BrainyBrian" data-style="mega" data-count-href="/BrainyBrian/followers" data-count-api="/users/BrainyBrian#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @dgramop on GitHub">Follow @dgramop (Alias: BrainyBrian)</a> for
+    <a class="github-button" href="https://github.com/oaktoncsclub" data-style="mega" data-count-href="/oaktoncsclub/followers" data-count-api="/users/oaktoncsclub#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @oaktoncsclub on GitHub">Follow @oaktoncsclub</a>. Based on <a href="http://gramo.tk">dGRAMOP Development</a> This specific web<u>page</u> is <a href="https://creativecommons.org/licenses/by/4.0/">creative commons</a></div>
     </div>
-    <div class="section" style="background-color:#BBDEFB;"><h1><center>Contact her brother dgramopadhye@gmail.com</center></h1></div>
   </div>
 
   <div class="fixed-action-btn" style="bottom: 40px; right: 24px;">
@@ -106,10 +134,10 @@
     <i class="large material-icons">launch</i>
   </a>
   <ul>
-    <li><a href="login.php" class="btn-floating red"><i class="material-icons">dashboard</i></a></li>
+    <li><a href="dashboard.php" class="btn-floating red"><i class="material-icons">dashboard</i></a></li>
     <li><a href="announcements.php" class="btn-floating yellow darken-1"><i class="material-icons">message</i></a></li>
-    <li><a href="login.php" class="btn-floating green"><i class="material-icons">group_work</i></a></li>
-    <li><a href="http://github.com/" class="btn-floating blue"><i class="material-icons">polymer</i></a></li>
+    <li><a href="projects.php" class="btn-floating green"><i class="material-icons">group_work</i></a></li>
+    <li><a href="https://github.com/oaktoncsclub" class="btn-floating blue"><i class="material-icons">polymer</i></a></li>
   </ul>
 </div>
 
@@ -123,7 +151,7 @@
   sr.reveal('.achievements', { delay: 400 });
 
   $('#fullpage').fullpage({
-    anchors: ['home', 'welcome', 'achievements', 'links', 'services', 'contact'],
+    anchors: ['home', 'welcome', 'achievements', 'whatwedo', 'contact'],
     menu: '#bar',
     afterLoad: function(anchorLink, index){
             var loadedSection = $(this);
