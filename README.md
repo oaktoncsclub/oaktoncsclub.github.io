@@ -7,7 +7,7 @@ Website for Oakton High School Computer Science Club(OCS)
 
 # Guideline
 
-> Use `.php` instead of `.html` in case of switching to PHP later
+> May use `.php` instead of `.html`, but GitHub Pages will NOT display the file correctly
 
 ## Basic Structure
 ```HTML
@@ -36,3 +36,6 @@ Website for Oakton High School Computer Science Club(OCS)
 		- Indent and use a blank line to separate `<head>`, `<body>`
 	- CSS, JS
 		- 4 spaces
+
+# License
+[dGRAMOP Development](https://github.com/BrainyBrian/dgramop): [Creative Commons 4.0](https://creativecommons.org/licenses/by/4.0/)
