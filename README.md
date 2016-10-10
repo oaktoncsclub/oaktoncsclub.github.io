@@ -6,8 +6,17 @@ Website for Oakton High School Computer Science Club(OCS)
 ![](https://img.shields.io/badge/html5shiv-3.7.0-lightgray.svg) ![](https://img.shields.io/badge/Respond-1.4.2-lightgray.svg)
 
 # Guideline
+> GHP: GitHub Pages
 
-> May use `.php` instead of `.html`, but GitHub Pages will NOT display the file correctly
+## Important Notice
+
+### Do
+Load **All** external resources(*css, js, etc...*) that are using `https`, or GHP will block them
+
+### Don't
+Use files hosted on GitHub. They'll only be loaded as plain text
+
+Use `.php` instead of `.html`, but GHP will not display the file correctly
 
 ## Basic Structure
 ```HTML
