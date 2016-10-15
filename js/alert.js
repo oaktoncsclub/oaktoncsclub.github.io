@@ -1,10 +1,10 @@
 $(document).ready(function() {
     $.notify({
         icon: "glyphicon glyphicon-bullhorn",
-        title: "Next Meeting",
-        message: 'Time: <time datetime="2016-10-05 15:00">Wednesday Oct. 5</time><br /> Don\'t forget your $15 dues!'
+        title: "",
+        message: 'We will <strong>NOT</strong> have a meeting on <time datetime="2016-10-19">Wednesday Oct. 19</time> because it\'s PSAT day'
     }, {
-        type: "success",
+        type: "danger",
         delay: 0,
         template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
             '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
