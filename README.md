@@ -6,6 +6,8 @@ Website for Oakton High School Computer Science Club(OCS)
 ![](https://img.shields.io/badge/html5shiv-3.7.0-lightgray.svg) ![](https://img.shields.io/badge/Respond-1.4.2-lightgray.svg)
 
 # Guideline
+
+[![Join the chat at https://gitter.im/OCS-Website/Lobby](https://badges.gitter.im/OCS-Website/Lobby.svg)](https://gitter.im/OCS-Website/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 > GHP: GitHub Pages
 
 ## Important Notice
