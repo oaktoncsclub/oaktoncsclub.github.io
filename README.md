@@ -1,5 +1,10 @@
 Website for Oakton High School Computer Science Club(OCS)
 
+Information
+
+[![Join the chat at https://gitter.im/OCS-Website/Lobby](https://badges.gitter.im/OCS-Website/Lobby.svg)](https://gitter.im/OCS-Website/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+Dependencies
 
 ![](https://img.shields.io/badge/jQuery-v3.1.1-blue.svg) ![](https://img.shields.io/badge/Bootstrap-3.3.7-blue.svg) ![](https://img.shields.io/badge/font--awesome-4.6.3-blue.svg) ![](https://img.shields.io/badge/bootstrap--notify-3.1.3-blue.svg)
 
@@ -7,7 +12,6 @@ Website for Oakton High School Computer Science Club(OCS)
 
 # Guideline
 
-[![Join the chat at https://gitter.im/OCS-Website/Lobby](https://badges.gitter.im/OCS-Website/Lobby.svg)](https://gitter.im/OCS-Website/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 > GHP: GitHub Pages
 
 ## Important Notice
