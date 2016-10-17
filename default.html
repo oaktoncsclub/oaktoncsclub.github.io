@@ -7,35 +7,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="icon" href="/img/favicon.png" type="image/png" />
+    <style media="screen">
+      nav {
+        height: 8%;
+      }
+    </style>
   </head>
 
   <body>
     <div id="fullpage">
 
-      <div class="section" style="background-color:#2196F3;">
+      <section class="section" style="background-color:#2196F3;color:white;">
         <center>
           <h1 class="title">Oakton Computer Science Club</h1>
-        </center><br/>
-        <center> <i class="title material-icons">polymer</i></center><br/>
-        <center><small class="words">Oakton's very own computer science club!</small>
+        </center>
+        <br/>
+        <center>
+          <i class="title material-icons">polymer</i>
+        </center>
+        <br/>
+        <center>
+          <small class="words">Oakton's very own computer science club!</small>
         </center>
         <div class="down1" style="position: fixed; top:80%; width:100%;">
           <center>Scroll Down</center>
         </div>
-      </div>
+      </section>
 
-      <div class="section" style="background-color:#42A5F5">
-        <center>
-          <h1>Welcome to our website!</h1>
-        </center>
-        <center>Here, you can view some recent updates, or simply browse some pages to see what we are all about!</center>
-      </div>
+      <section class="section" style="background-color:#42A5F5;">
+        <nav>
+          <center class="blue nav-wrapper">
+            <a href="#update" class="brand-logo" style="color:white;">Updates</a>
+          </center>
+        </nav>
+        <br/><br/>
+        <div class="container">
+          <div class="row">
+            <div class="col s6">
+              <div class="card z-depth-3">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" alt="There is going to be a meeting!" src="https://d13yacurqjgara.cloudfront.net/users/255/screenshots/3023541/term.png" />
+                </div>
+                <div class="card-content activator">
+                  <span class="card-title activator grey-text text-darken-4">Next Meeting</span><i class="material-icons">open_in_new</i>
+                  <p><time datetime="2016-11-02" 15:00>Wed Nov. 2<sup>nd</sup></time></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Normal Meeting at room 156<i class="material-icons right">close</i></span>
+                  <p>Come and have fun!</p>
+                </div>
+              </div>
+            </div>
 
-      <div class="section" style="background-color:#64B5F6">
-        <nav style="height:8%;">
-          <div class="blue nav-wrapper">
-            <a style="position:relative; left:40%;" href="#achievements" class="brand-logo">Achievements</a>
+            <div class="col s6">
+              <div class="card z-depth-3">
+                <a href="http://ist.gmu.edu/CyberConference/" target="_blank">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" alt="Cyber Security" src="https://d13yacurqjgara.cloudfront.net/users/485324/screenshots/2391723/cuba_illustration.png">
+                  </div>
+                  <div class="card-content activator">
+                    <span class="card-title activator grey-text text-darken-4">Cyber Security Youth Conference</span><i class="material-icons">open_in_new</i>
+                    <p><time datetime="2016-10-28 09:00-14:30">Sat Oct. 29</time></p>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section" style="background-color:#64B5F6">
+        <nav>
+          <center class="blue nav-wrapper">
+            <a href="#achievements" class="brand-logo">Achievements</a>
+          </center>
         </nav>
         <br/><br/>
         <div class="container">
@@ -89,49 +134,51 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="section" style="background-color:#90CAF9;">
-        <div class="row">
-          <nav style="height:8%;">
-            <div class="blue nav-wrapper">
-              <a style="position:relative; left:40%;" href="#whatwedo" class="brand-logo">What We Do</a>
+      <section class="section" style="background-color:#90CAF9;">
+        <nav>
+          <center class="blue nav-wrapper">
+            <a href="#whatwedo" class="brand-logo">What We Do</a>
+          </center>
+        </nav>
+        <br/><br/>
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <div class="card horizontal">
+                <div class="card-image">
+                  <img src="https://code.vmware.com/wp-content/uploads/sites/13/2016/08/hackathon-graphic.png">
+                  <span class="card-title blue">Hackathon Competitions</span>
+                </div>
+                <div class="card-content">
+                  <p>We love competing in Hackathons! If you are running a hackathon, or want us to participate in one, contact us!</p>
+                </div>
+              </div>
             </div>
-          </nav>
-          <br/><br/>
-          <div class="col s12">
-            <div class="card horizontal">
-              <div class="card-image">
-                <img src="https://code.vmware.com/wp-content/uploads/sites/13/2016/08/hackathon-graphic.png">
-                <span class="card-title blue">Hackathon Competitions</span>
-              </div>
-              <div class="card-content">
-                <p>We love competing in Hackathons! If you are running a hackathon, or want us to participate in one, contact us!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12">
-            <div class="card horizontal">
-              <div class="card-image">
-                <img src="http://www.gandhfinancial.com/img/~www.gandhfinancial.com/non%20profit.jpg">
-                <span class="card-title blue">Making a Difference</span>
-              </div>
-              <div class="card-content">
-                <p>We love helping non-profit organisations (501-3(c)) build their online prsence and utilize technology to help them run more efficiently </p>
+            <div class="col s12">
+              <div class="card horizontal">
+                <div class="card-image">
+                  <img src="http://www.gandhfinancial.com/img/~www.gandhfinancial.com/non%20profit.jpg">
+                  <span class="card-title blue">Making a Difference</span>
+                </div>
+                <div class="card-content">
+                  <p>We love helping non-profit organisations (501-3(c)) build their online prsence and utilize technology to help them run more efficiently </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="section" style="background-color:#BBDEFB;">
-        <nav style="height:8%;">
-          <div class="blue nav-wrapper">
-            <a style="position:relative; left:40%;" href="#contact" class="brand-logo">Contact</a>
-          </div>
+      <section class="section" style="background-color:#BBDEFB;">
+        <nav>
+          <center class="blue nav-wrapper">
+            <a href="#contact" class="brand-logo">Contact</a>
+          </center>
         </nav>
         <br/><br/>
-      </div>
+      </section>
 
     </div>
 
@@ -160,7 +207,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/vendors/scrolloverflow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/jquery.fullPage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
     <script>
       window.sr = ScrollReveal();
@@ -170,20 +216,17 @@
       sr.reveal('.achievements', {delay: 400});
 
       $('#fullpage').fullpage({
-        anchors: ['home', 'welcome', 'achievements', 'whatwedo', 'contact'],
+        anchors: ['home', 'update', 'achievements', 'whatwedo', 'contact'],
         menu: '#bar',
         afterLoad: function(anchorLink, index) {
           var loadedSection = $(this);
-          var TITLES = ["Achievements", "Activities", "Contact"];
+          var TITLES = ["Updates","Achievements", "Activities", "Contact"];
           switch(index) {
-            case 2:
+            case 1:
               setTimeout(function() {$.fn.fullpage.moveSectionDown();}, 4000);
               // Don't add `break` here!
-            case 1:
-              $("title").html("Oakton Computer Science Club");
-              break;
             default:
-              $("title").html("OCS - " + TITLES[index - 3]);
+              $("title").html((index==1?"Oakton Computer Science Club":"OCS - " + TITLES[index-2]));
           }
         }
       });
