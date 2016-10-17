@@ -11,6 +11,11 @@
       nav {
         height: 8%;
       }
+      .adj
+      {
+        position:relative;
+        right:45%;
+      }
     </style>
   </head>
 
@@ -37,7 +42,7 @@
       <section class="section" style="background-color:#42A5F5;">
         <nav>
           <center class="blue nav-wrapper">
-            <a href="#update" class="brand-logo" style="color:white;">Updates</a>
+            <a href="#update" class="brand-logo adj" style="color:white;">Updates</a>
           </center>
         </nav>
         <br/><br/>
@@ -79,7 +84,7 @@
       <section class="section" style="background-color:#64B5F6">
         <nav>
           <center class="blue nav-wrapper">
-            <a href="#activities" class="brand-logo">Activities</a>
+            <a href="#activities" class="brand-logo adj">Activities</a>
           </center>
         </nav>
         <br/><br/>
@@ -143,7 +148,7 @@
       <section class="section" style="background-color:#90CAF9;">
         <nav>
           <center class="blue nav-wrapper">
-            <a href="#other" class="brand-logo">What Else?</a>
+            <a href="#other" class="brand-logo adj">What Else?</a>
           </center>
         </nav>
         <br/><br/>
@@ -183,7 +188,7 @@
       <section class="section" style="background-color:#BBDEFB;">
         <nav>
           <center class="blue nav-wrapper">
-            <a href="#contact" class="brand-logo">Contact</a>
+            <a href="#contact" class="brand-logo adj">Contact</a>
           </center>
         </nav>
         <br/><br/>
@@ -268,7 +273,6 @@
       sr.reveal('.words', {delay: 500});
       sr.reveal('.down1', {delay: 700});
       sr.reveal('.activities', {delay: 400});
-
       $('#fullpage').fullpage({
         anchors: ['home', 'update', 'activities', 'other', 'contact'],
         menu: '#bar',
