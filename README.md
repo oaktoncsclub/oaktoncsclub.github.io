@@ -2,7 +2,7 @@ Website for Oakton High School Computer Science Club(OCS)
 
 Information
 
-[![Join the chat at https://gitter.im/OCS-Website/Lobby](https://badges.gitter.im/OCS-Website/Lobby.svg)](https://gitter.im/OCS-Website/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at gitter.im/oaktoncsclub/public](https://badges.gitter.im/OCS-Website/Lobby.svg)](https://gitter.im/oaktoncsclub/public)
 
 Dependencies
 
