@@ -1,39 +1,38 @@
 import json, os
 
-head = """
-    <!DOCTYPE html>
-    <html>
-    <head>
+head = """<!DOCTYPE html>
+<html>
+ <head>
     <meta charset="UTF-8" />
     <title>Members - Oakton Computer Science Club</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" />
-    </head>
+  </head>
 
-    <body>
+  <body>
     <h2 style="text-align:center">Club Members</h2>
     <div class="container">
-    <div class="row">
+      <div class="row">
     """
 
 template = """
-    <div class="col s6 m4">
-    <div class="card z-depth-3">
-    <div class="card-content activator">
-    <span class="card-title activator grey-text text-darken-4"><a href="https://github.com/{0}" target="_new">{1}</a></span>
-    <p>{2}</p>
-    </div>
-    </div>
-    </div>
+        <div class="col s6 m4">
+          <div class="card z-depth-3">
+            <div class="card-content activator">
+              <span class="card-title activator grey-text text-darken-4"><a href="https://github.com/{0}" target="_new">{1}</a></span>
+              <p>{2}</p>
+            </div>
+          </div>
+        </div>
     """
 
 tail = """
-    </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    </body>
-    </html>
-    """
+  </body>
+</html>
+"""
 
 output = ""
 
