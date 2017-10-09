@@ -1,0 +1,43 @@
+/*=======Basic=========*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+/*========== media queries ==============*/
+
+@media only screen and (max-width: 698px) {
+    .section .title{
+    	padding-top:1em;
+    	font-size: 2.9em;
+    }
+    .section .material-icons{
+    	font-size: 1.3em;
+    	color:black;
+    }
+    .section .words{
+    	font-size:1.8em;
+    }
+	.section .next{
+		font-size:2em;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+    .section .title{
+    	padding-top:1em;
+    	font-size: 2.2em;
+    	font-weight:bold;
+    }
+    .section .material-icons{
+    	font-size: 1em;
+    	color:black;
+    }
+    .section .words{
+    	font-size:1.3em;
+    }
+	.section .next{
+		font-size:]1.7em;
+	}
+}
