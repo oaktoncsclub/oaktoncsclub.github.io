@@ -33,3 +33,14 @@ Follow this tutorial here: https://help.github.com/articles/signing-up-for-a-new
 We're working on bringing in a GitHub bot that will automatically generate pages for you if you put in a blank page, so keep an eye out for that if this is too hard.
 
 Once you create the pull request, one of the officers will review it. If you think you got forgotton, just tag @dgramop or Andrew Li, and one of us will be there to help. If you need help, you can leave a commend in your pull request (and tag us), email dgramopadhye@gmail.com, or tag @Officer on the discord.
+
+## Rules:
+  - Be a decent person
+  - Don't be mean to other people
+  - No NSFW
+  - No links or other references to NSFW (a reference is something like an image that you call up from somewhere else `<img src="nsfwstuff"/>`, not "that's what she said", though remember, colleges can (and will) google you.
+  - Only create the site or start a page if you want to. Understand that all the stuff you write is public, and webcrawlers can archive your content (like web.archive.org)
+  - School Rules apply (pretty much)
+  - (pending rule) - all pages must contain a visible link for reporting abuse. Although this rule is pending, bare in mind that we may add this link to your site at any time
+  - Have fun, write blogs blah blah blah. "In darkness, democracy dies". 
+Break the rules, and you're site will be taken down. 
