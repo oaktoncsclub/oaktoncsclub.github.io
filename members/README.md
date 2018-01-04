@@ -1,3 +1,5 @@
+# The auto-website-from-issue bot is UNSTABLE, PERIODICALLY OFFLINE, and is STILL MISSING CRITICAL FEATURES. Continue at own risk!
+
 # Oakton Computer Science Club Member Pages
 This is @dgramop's sad attempt to revive the practice of "public home directories"
 
