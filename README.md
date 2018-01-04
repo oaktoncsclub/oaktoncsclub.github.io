@@ -52,5 +52,3 @@ Use `.php` instead of `.html`, but GHP will not display the file correctly
 	- CSS, JS
 		- 4 spaces
 
-# License
-[dGRAMOP Development](https://github.com/BrainyBrian/dgramop): [Creative Commons 4.0](https://creativecommons.org/licenses/by/4.0/)
