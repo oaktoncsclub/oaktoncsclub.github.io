@@ -16,10 +16,12 @@ It's a two-step process:
  - Things are parsed nicely:
    ```${name}``` works
    ```$  { name }``` works
-   ```$
+   ```
+   $
    {
    name
-   }```
+   }
+   ```
    also works
    - But that means that having $ signs and curly braces can be weird so be careful. If you have a need to put in curly braces or dollar signs, use HTML escape code (google em)
 
