@@ -1,4 +1,4 @@
-Website for Oakton High School Computer Science Club(OCS)
+# Oakton Computer Science Club
 
 Information
 
