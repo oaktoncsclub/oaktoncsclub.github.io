@@ -1,5 +1,3 @@
-# The auto-website-from-issue bot is UNSTABLE, PERIODICALLY OFFLINE, and is STILL MISSING CRITICAL FEATURES. Continue at own risk!
-
 # Oakton Computer Science Club Member Pages
 This is @dgramop's sad attempt to revive the practice of "public home directories"
 
@@ -62,3 +60,8 @@ Alright so go and cause some problems. Just kidding, here's how you really creat
   - (pending rule) - all pages must contain a visible link for reporting abuse. Although this rule is pending, bare in mind that we may add this link to your site at any time
   - Have fun, write blogs blah blah blah. "In darkness, democracy dies". 
 Break the rules, and you're site will be taken down. 
+
+# The auto-website-from-issue bot is moderately UNSTABLE. 
+If some wierd error happens, it's set to just close (or try to) the entire issue. If that happens, don't reopen it, or you'll be playing that game 24/7 till the day you die, (or until something happens to my server, gh acct, this repo etc.).
+Just ping @dgramop from within the issue and/or assign me (dgramop) to it so that I can investigate. 
+The bot was kinda thrown together and isn't my best work per-se, but it works, and that's what matters.
