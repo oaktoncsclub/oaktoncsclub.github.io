@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>Oakton Computer Science Club</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/jquery.fullPage.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -373,31 +372,5 @@
       sr.reveal('.words', {delay: 500});
       sr.reveal('.down1', {delay: 700});
     </script>
-
-<!-- Old Scroll Script
-    <script>
-      window.sr = ScrollReveal();
-      sr.reveal('.title', 400);
-      sr.reveal('.words', {delay: 500});
-      sr.reveal('.down1', {delay: 700});
-      sr.reveal('.activities', {delay: 400});
-      $('#fullpage').fullpage({
-        anchors: ['home', 'update', 'activities', 'other', 'contact'],
-        menu: '#bar',
-        afterLoad: function(anchorLink, index) {
-          var loadedSection = $(this);
-          var TITLES = ["Updates","Activities", "Other Information", "Contact"];
-          switch(index) {
-            case 1:
-              setTimeout(function() {$.fn.fullpage.moveSectionDown();}, 4000);
-              // Don't add `break` here!
-            default:
-              $("title").html((index==1?"Oakton Computer Science Club":"OCS - " + TITLES[index-2]));
-          }
-        }
-      });
-    </script>
--->
-  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"214c42137e3b4ecf1aa8e89fa","lid":"c5a4380630"}) })</script>
   </body>
 </html>
