@@ -13,16 +13,9 @@ It's a two-step process:
    ${username} -> replaced with username
    ${uid} -> replaced with GitHub user ID. Note that this will never change, although usernames can change on github
    ${name} -> name of the user
- - Things are parsed nicely:
+ - Things are parsed strictly:
    ```${name}``` works
-   ```$  { name }``` works
-   ```
-   $
-   {
-   name
-   }
-   ```
-   also works
+   ```${ name }``` doesn't
    - But that means that having $ signs and curly braces can be weird so be careful. If you have a need to put in curly braces or dollar signs, use HTML escape code (google em)
 
 ## Templates:
