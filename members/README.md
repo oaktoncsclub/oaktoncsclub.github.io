@@ -51,6 +51,8 @@ Alright so go and cause some problems. Just kidding, here's how you really creat
   - Your site is now live at https://oakcsclub.win/members/<your username>
   - Remember to replace <your username> with... your username!
 
+Never let anyone try to change your config file - if you change the UID compnent, then whosever account with that UID now has access to write to your /members directory
+
 ## I want to start over!
 Make a pull request to delete all the files in your directory (/members/<github username>), and then boom, you're reset.
 
