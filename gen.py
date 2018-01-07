@@ -1,6 +1,6 @@
 import json, os
 
-head = """<!DOCTYPE html>
+head = """<!DOCTYPE html> 
 <html>
  <head>
     <meta charset="UTF-8" />
