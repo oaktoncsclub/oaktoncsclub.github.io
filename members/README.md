@@ -33,15 +33,16 @@ Alright so go and cause some problems. Just kidding, here's how you really creat
   ==== web request ====
   {
   "name":"<firstname> <lastname>",
-  "aliases":["<nickname>","<nickname>","<nickname>"],
-  "template":"<template name>"
+  "template":{"type":"html","name":"retro"},
+  "email":"<email>"
   }
   ==== end web request ====
   ```
+  Note anything above the `==== web request ====` and below the `==== end web request ====` is ignored by the bot. The stuff in between should be JSON compliant. If you're using a template, read it's description, as it might require that you add certain bits to the web request config. Templates can add parts to the config as needed. The retro template is the simplest (and most boring) template
   - Replace <firstname> with your firstname
   - Replace <lastname> with your lastname
-  - Replace <nickname> with your nickname, and get rid of all the nicknames if you only have one
-  - If you have no nicknames, make sure the line with ```"aliases"``` on it looks like ```"aliases":[],"```. It's a simple list, so make sure that the last string (a string is a set of characters/words/phrases/spaces enclosed by quotes) does NOT have a comma after it, the first string doesn't have a comma before it. All the strings have to be enclosed by []. Think of it like a box that stores all your nicknames, or like drawing a sideways shopping list
+  - Replace <email> **NON-SCHOOL, PERSONAL** email address.
+  - Replace the template name (```retro```) with the template name you want (retro with whatever). As of now we support markdown and html templates. Replace ```html``` with ```md``` for type.
   - Click "Create issue"
   - Click "<> Code"
   - Click "members"
@@ -49,6 +50,9 @@ Alright so go and cause some problems. Just kidding, here's how you really creat
   - Those are the files to your site!
   - Your site is now live at https://oakcsclub.win/members/<your username>
   - Remember to replace <your username> with... your username!
+
+## I want to start over!
+Make a pull request to delete all the files in your directory (/members/<github username>), and then boom, you're reset.
 
 ## Rules:
   - Be a decent person
