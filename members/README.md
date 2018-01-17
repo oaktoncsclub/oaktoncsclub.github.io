@@ -72,4 +72,4 @@ If some wierd error happens, it's set to just close (or try to) the entire issue
 Just ping @dgramop from within the issue and/or assign me (dgramop) to it so that I can investigate. 
 The bot was kinda thrown together and isn't my best work per-se, but it works, and that's what matters.
 
-# Members with pages:
+# Last member to create a page:
