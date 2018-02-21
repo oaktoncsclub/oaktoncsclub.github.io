@@ -1,13 +1,14 @@
 import os
+from urllib.parse import quote
 
 name = [file[:-4] for file in os.listdir(".") if file.endswith(".wav")]
 template = """
-        <button onclick="document.getElementById('{1}').play()">
+    <button onclick="document.getElementById('{1}').play()">
         {0}
-                <audio id="{1}">
-                        <source src="{0}.wav" type="audio/wav">
-                    </audio>
-        </button>
+        <audio id="{1}">
+            <source src="{2}.wav" type="audio/wav">
+        </audio>
+    </button>
 """
 
 start = """
@@ -31,5 +32,5 @@ end = """
 with open("index.html", "w") as f:
     f.write(start)
     for (i, n) in enumerate(name):
-        f.write(template.format(n, i))
+        f.write(template.format(n, i, quote(n)))
     f.write(end)
