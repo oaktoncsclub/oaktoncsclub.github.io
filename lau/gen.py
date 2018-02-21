@@ -2,9 +2,9 @@ import os
 
 name = [file[:-4] for file in os.listdir(".") if file.endswith(".wav")]
 template = """
-        <button onclick="document.getElementById('{0}').play()">
+        <button onclick="document.getElementById('{1}').play()">
         {0}
-                <audio id="{0}">
+                <audio id="{1}">
                         <source src="{0}.wav" type="audio/wav">
                     </audio>
         </button>
@@ -20,6 +20,7 @@ start = """
     <title>Lau Board</title>
 </head>
 <body>
+<h1>Welcome to Lau Board!</h1>
 """
 end = """
 </body>
@@ -29,6 +30,6 @@ end = """
 
 with open("index.html", "w") as f:
     f.write(start)
-    for n in name:
-        f.write(template.format(n))
+    for (i, n) in enumerate(name):
+        f.write(template.format(n, i))
     f.write(end)
