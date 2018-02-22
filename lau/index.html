@@ -1,112 +1,163 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lau Board</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-light_blue.min.css">
 </head>
+
 <body>
-<h1>Welcome to Lau Board!</h1>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Lau Board</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="http://oakcsclub.win/">Oakton CS Club</a>
+                <a class="mdl-navigation__link" href="https://github.com/oaktoncsclub">GitHub</a>
+                <a class="mdl-navigation__link" href="https://www.facebook.com/groups/549110601903758/">Facebook</a>
+                <a class="mdl-navigation__link" href="https://discord.gg/W8GkXur">Discord</a>
+                <a class="mdl-navigation__link" href="mailto:oaktoncsclub@gmail.com">Email</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content" style="margin:1rem">
+                <h1>Welcome to Lau Board!</h1>
 
-    <button onclick="document.getElementById('0').play()">
-        Allright
-        <audio id="0">
-            <source src="Allright.wav" type="audio/wav">
-        </audio>
-    </button>
+                <p>Click on the buttons to play Mr. Lau's famous quotes.</p>
 
-    <button onclick="document.getElementById('1').play()">
-        Any Questions?
-        <audio id="1">
-            <source src="Any%20Questions%3F.wav" type="audio/wav">
-        </audio>
-    </button>
+                
+                <button onclick="document.getElementById('1').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    Allright
+                    <audio id="1">
+                        <source src="Allright.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('2').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    Any Questions?
+                    <audio id="2">
+                        <source src="Any%20Questions%3F.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('3').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    AYE
+                    <audio id="3">
+                        <source src="AYE.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('4').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    Can Do Better
+                    <audio id="4">
+                        <source src="Can%20Do%20Better.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('5').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    Cup of Java
+                    <audio id="5">
+                        <source src="Cup%20of%20Java.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('6').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    I&#39;m Moses
+                    <audio id="6">
+                        <source src="I%27m%20Moses.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('7').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    It&#39;s Doable
+                    <audio id="7">
+                        <source src="It%27s%20Doable.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('8').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    Lunchtime
+                    <audio id="8">
+                        <source src="Lunchtime.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('9').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    OH NO!
+                    <audio id="9">
+                        <source src="OH%20NO%21.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('10').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    OHH
+                    <audio id="10">
+                        <source src="OHH.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('11').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    OK
+                    <audio id="11">
+                        <source src="OK.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('12').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    Put away Cell Phone
+                    <audio id="12">
+                        <source src="Put%20away%20Cell%20Phone.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('13').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    See Me
+                    <audio id="13">
+                        <source src="See%20Me.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
+                <button onclick="document.getElementById('14').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    VERY Doable
+                    <audio id="14">
+                        <source src="VERY%20Doable.wav" type="audio/wav">
+                    </audio>
+                </button>
+                
 
-    <button onclick="document.getElementById('2').play()">
-        AYE
-        <audio id="2">
-            <source src="AYE.wav" type="audio/wav">
-        </audio>
-    </button>
+                <hr>
 
-    <button onclick="document.getElementById('3').play()">
-        Can Do Better
-        <audio id="3">
-            <source src="Can%20Do%20Better.wav" type="audio/wav">
-        </audio>
-    </button>
+                <div>
+                    <h3>What is Lau Board?</h3>
+                    <p>Originally,
+                        <a href="https://github.com/bencullenn/Lau-Board">Lau Board</a> is a tribute to Mr.Lau and his amazing quotes through a soundboard app running on iPhones,
+                        written by
+                        <a href="https://github.com/bencullenn">Ben Cullen</a>. Unfortunately, the App Store review team decided to reject this app because it is
+                        not "useful" enough, i.e. only Mr. Lau's students will find this interesting. But we all know, these
+                        inspiring quotes are for everyone.</p>
+                </div>
+            </div>
+        </main>
+    </div>
 
-    <button onclick="document.getElementById('4').play()">
-        Cup of Java
-        <audio id="4">
-            <source src="Cup%20of%20Java.wav" type="audio/wav">
-        </audio>
-    </button>
-
-    <button onclick="document.getElementById('5').play()">
-        I'm Moses
-        <audio id="5">
-            <source src="I%27m%20Moses.wav" type="audio/wav">
-        </audio>
-    </button>
-
-    <button onclick="document.getElementById('6').play()">
-        It's Doable
-        <audio id="6">
-            <source src="It%27s%20Doable.wav" type="audio/wav">
-        </audio>
-    </button>
-
-    <button onclick="document.getElementById('7').play()">
-        Lunchtime
-        <audio id="7">
-            <source src="Lunchtime.wav" type="audio/wav">
-        </audio>
-    </button>
-
-    <button onclick="document.getElementById('8').play()">
-        OH NO!
-        <audio id="8">
-            <source src="OH%20NO%21.wav" type="audio/wav">
-        </audio>
-    </button>
-
-    <button onclick="document.getElementById('9').play()">
-        OHH
-        <audio id="9">
-            <source src="OHH.wav" type="audio/wav">
-        </audio>
-    </button>
-
-    <button onclick="document.getElementById('10').play()">
-        OK
-        <audio id="10">
-            <source src="OK.wav" type="audio/wav">
-        </audio>
-    </button>
-
-    <button onclick="document.getElementById('11').play()">
-        Put away Cell Phone
-        <audio id="11">
-            <source src="Put%20away%20Cell%20Phone.wav" type="audio/wav">
-        </audio>
-    </button>
-
-    <button onclick="document.getElementById('12').play()">
-        See Me
-        <audio id="12">
-            <source src="See%20Me.wav" type="audio/wav">
-        </audio>
-    </button>
-
-    <button onclick="document.getElementById('13').play()">
-        VERY Doable
-        <audio id="13">
-            <source src="VERY%20Doable.wav" type="audio/wav">
-        </audio>
-    </button>
-
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
+
 </html>

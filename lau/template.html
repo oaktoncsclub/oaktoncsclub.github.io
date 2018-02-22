@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lau Board</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-light_blue.min.css">
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Lau Board</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="http://oakcsclub.win/">Oakton CS Club</a>
+                <a class="mdl-navigation__link" href="https://github.com/oaktoncsclub">GitHub</a>
+                <a class="mdl-navigation__link" href="https://www.facebook.com/groups/549110601903758/">Facebook</a>
+                <a class="mdl-navigation__link" href="https://discord.gg/W8GkXur">Discord</a>
+                <a class="mdl-navigation__link" href="mailto:oaktoncsclub@gmail.com">Email</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content" style="margin:1rem">
+                <h1>Welcome to Lau Board!</h1>
+
+                <p>Click on the buttons to play Mr. Lau's famous quotes.</p>
+
+                {% for name in names %}
+                <button onclick="document.getElementById('{{ forloop.counter }}').play()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                    style="margin:0.5rem">
+                    {{ name }}
+                    <audio id="{{ forloop.counter }}">
+                        <source src="{{ name|urlencode }}.wav" type="audio/wav">
+                    </audio>
+                </button>
+                {% endfor %}
+
+                <hr>
+
+                <div>
+                    <h3>What is Lau Board?</h3>
+                    <p>Originally,
+                        <a href="https://github.com/bencullenn/Lau-Board">Lau Board</a> is a tribute to Mr.Lau and his amazing quotes through a soundboard app running on iPhones,
+                        written by
+                        <a href="https://github.com/bencullenn">Ben Cullen</a>. Unfortunately, the App Store review team decided to reject this app because it is
+                        not "useful" enough, i.e. only Mr. Lau's students will find this interesting. But we all know, these
+                        inspiring quotes are for everyone.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+
+</html>
