@@ -64,3 +64,6 @@ Use `.php` or any server-side dynamic scripting instead of `.html`, but GHP will
 	- CSS, JS
 		- 4 spaces
 
+## Analytics:
+[Simple Analytics](http://dgramop.xyz/analytics/viewer.php?uid=oakcsclub.win)
+Analytics running on some really old php that was written around 4 years ago, should work fine
