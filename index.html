@@ -34,6 +34,37 @@
         height: 100%;
         width:100%;
       }
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 2;
+      }
+
+      li {
+          float: left;
+      }
+
+      li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+          background-color: #111;
+      }
+
+      .active {
+          background-color: #4CAF50;
+      }
       h1
       {
         font-family: BasicSans-Regular;
@@ -76,7 +107,15 @@
   <body>
     <div id="fullpage">
 
-      <section class="section" style="background-color:#00A6FB;color:white;">
+      <ul>
+        <li><a class="smooth-goto" href="#home">Home</a></li>
+        <li><a class="smooth-goto" href="#updates">Updates</a></li>
+        <li><a class="smooth-goto" href="#competitions">Competitions</a></li>
+        <li><a class="smooth-goto" href="#activities">Activities</a></li>
+        <li><a class="smooth-goto" href="#contact">Contact</a></li>
+      </ul>
+
+      <section class="section" style="background-color:#00A6FB;color:white;" id="home">
         <div style="padding:2rem;margin:2rem">
         <center>
           <h1 class="title">Oakton Computer Science Club</h1>
@@ -96,7 +135,7 @@
 
       </section>
 
-      <section class="section" style="background-color:#42A5F5;">
+      <section class="section" style="background-color:#42A5F5;" id="updates">
         <nav>
           <center class="purple nav-wrapper">
             <h3>Updates</h3>
@@ -217,7 +256,7 @@
         </div>
       </section>
 
-      <section class="section" style="background-color:#90CAF9;">
+      <section class="section" style="background-color:#90CAF9;" id="competitions">
         <nav>
           <center class="orange nav-wrapper">
             <h3>Competitions</h3>
@@ -299,7 +338,7 @@
         </div>
       </section>
 
-      <section class="section" style="background-color:#64B5F6">
+      <section class="section" style="background-color:#64B5F6" id="activities">
         <nav>
           <center class="green nav-wrapper">
             <h3>Activities</h3>
@@ -363,7 +402,7 @@
         </div>
       </section>
 
-      <section class="section" style="background-color:#BBDEFB;">
+      <section class="section" style="background-color:#BBDEFB;" id="contact">
         <nav>
           <center class="red nav-wrapper">
             <h3>Contact</h3>
@@ -452,6 +491,12 @@
       sr.reveal('.title', 400);
       sr.reveal('.words', {delay: 500});
       sr.reveal('.down1', {delay: 700});
+    </script>
+    <script type="text/javascript">
+      $('.smooth-goto').on('click', function() {  
+        $('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 500);
+        return false;
+      });
     </script>
   </body>
 </html>
