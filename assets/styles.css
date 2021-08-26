@@ -1,0 +1,168 @@
+/*Get Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+/*CSS Resets*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*Define Global Colors*/
+:root {
+    --text-color: black;
+    --grey-color: grey;
+    --bg-color: white;
+    --accent-primary: #a6213c;
+    --accent-primary-dark: #2e7d43;
+    --accent-secondary: #1a67db;
+}
+/*Set up body colors/text*/
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+/*Define text styles*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+h1 {
+    font-size: 28px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+h2 {
+    font-size: 24px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+h3 {
+    font-size: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+h4 {
+    font-size: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}
+p {
+    font-size: 16px;
+}
+/*Links*/
+a:link {
+    color: var(--accent-primary);
+}
+a:visited {
+    color: var(--accent-primary-dark)
+}
+/*Color templates*/
+.cPrimary {
+    background-color: var(--accent-primary);
+    color: var(--bg-color);
+}
+.cSecondary {
+    background-color: var(--accent-secondary);
+    color: var(--bg-color);
+}
+.dark {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+/*UI*/
+.logo {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    font-size: 96px;
+    text-align: center;
+}
+.hCarousel {
+    --h: 100px; /*Defaults to 40% of a users screen height*/
+    display: flex;
+    max-height: calc(600px - 10vw); /*todo mostly works but when screen gets really big starts to create problems*/
+}
+.hCard {
+    --w: 20%; /*defaults to 20% width, user can pass in any width value they want*/
+
+    display: block;
+    min-height: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0px 0px 5px var(--grey-color);
+    width: var(--w);
+}
+.hCard.iFull { /*todo fix*/
+    padding: 0px;
+    background-color: transparent;
+    /*box-shadow: 0 0 0;*/
+}
+.hCard.iFull img {
+    border-radius: 5px;
+    object-fit: cover;
+    height: 100%;
+}
+/*JS*/
+.aFade {
+    opacity: 0%;
+}
+.aTyped {
+    /*opacity: 0%;*/
+}
+/*Selects every card that's inside a spacing element with an animate attribute*/
+.hCarousel.aSlide > .hCard {
+    position: relative;
+}
