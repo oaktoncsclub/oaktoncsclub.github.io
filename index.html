@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oakton CSCS Club</title>
+
+    <link rel="stylesheet" href="assets/styles.css">
+    <script type="module" src="assets/nextMeeting.js"></script>
+</head>
+<body class="dark">
+    <div id="logo" style="font-family: 'Rubik Mono One', sans-serif; font-size: 6vw; text-align: center; margin-top: 75px; margin-bottom: 75px">OClktaoOnuSSCCbC</div>
+    <script type="module">
+        import * as data from './assets/nextMeeting.js'
+
+        document.getElementById("time").innerHTML = data.time;
+        document.getElementById("location").innerHTML = data.loc;
+        document.getElementById("description").innerHTML = data.description;
+
+        let element = document.getElementById("logo");
+        let original = "Oakton CSCS Club";
+        let pos = 0;
+        let id = setInterval(async () => {
+            pos++;
+            if (pos === 21) {
+                clearInterval(id);
+                let odd = true;
+                setInterval(() => {
+                    if (odd) {
+                        element.innerHTML = "&nbsp" + original + "|";
+                    } else {
+                        element.innerHTML = "&nbsp" + original + "&nbsp";
+                    }
+                    odd = !odd;
+                }, 500)
+                await new Promise(resolve => setTimeout(resolve, 2000));
+                let lauPos = 0;
+                let lauId = setInterval(() => {
+                    lauPos++;
+                    if (lauPos === 100) {
+                        //console.log("finished");
+                        document.getElementById("lau").style.bottom = "5px";
+                        clearInterval(lauId);
+                    } else {
+                        document.getElementById("lau").style.bottom = -1000 * Math.exp(-.066 * lauPos) + 6 + "px";
+                    }
+                }, 10)
+            }
+            else {
+                let chars = Math.round((original.length * pos) / 20);
+                let arr = original.split(" "); //remove spaces
+                arr = arr.reduce((a, b) => a + b, "").split(""); //reduce to string then re-split
+                //random int -1 or 1
+                function randomSort() {
+                    return Math.round(Math.random()) - 0.5;
+                }
+
+                let shuffled = arr.sort(randomSort).reduce((a, b) => a + b, "");
+                if (chars === 1) shuffled += shuffled;
+                //console.log(chars + " - " + (original.length - chars))
+                //console.log(original.slice(0, chars) + shuffled.slice(0, original.length - chars));
+
+                element.innerHTML = "&nbsp" + original.slice(0, chars) + shuffled.slice(0, original.length - chars) + "&nbsp";
+            }
+        }, 60);
+    </script>
+    <div class="hCarousel" style="justify-content: center;">
+        <div class="hCard cPrimary" style="text-align: center; --w: 50%;">
+            <h1>
+                Next Meeting:
+            </h1>
+            <h1 id="time" style="font-size: 48px; margin-bottom: 5px">
+                January 1st
+            </h1>
+            <div class="hCarousel" style="justify-content: center">
+                <div class="hCard cSecondary" style="--w: 50%">
+                    <h2>
+                        Location:
+                    </h2>
+                    <h1 id="location" style="font-size: 48px">
+                        Lunch Room
+                    </h1>
+                </div>
+                <div class="hCard dark" style="--w: 50%;">
+                    <h2>
+                        Description:
+                    </h2>
+                    <p id="description" style="text-align: left; font-size: 20px">
+                        Ms. Sarah Kern, a Malware Analysis Expert at MITRE will be giving a lecture on antivirus basics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 75px"></div>
+    <h1 style="text-align: center; font-size: 36px">About Us:</h1>
+    <div class="hCarousel" style="justify-content: center; font-size: 18px">
+        <div class="hCard" style="--w: 70%;">
+            <p style="font-size: 20px">
+                Oakton's Computer Science and Cybersecurity (CSCS) Club is one of Oakton's largest and most prestigious clubs.
+                During meetings, club members undergo interactive lessons and activities that broaden their understanding of
+                technology, learning about various topics such as Encryption and Web Development.
+                <br><br>
+                In addition to enjoyable instruction, CSCS Club also offers its members many opportunities to further
+                develop and show off their skills through events such as Hackathons and competitions such as CyberPatriot
+                and a myriad of Capture the Flag tournaments.
+                <br><br>
+                Distinguished guest speakers also make appearances at meetings, giving members a chance to delve deeper into
+                career opportunities and the professional world of STEM. One of our most recent guest speakers, Ms. Sarah
+                Kern, a Malware Analysis Expert at MITRE, gave a phenomenal introductory-level demonstration on Static
+                Analysis, a presentation that club members thoroughly enjoyed.
+                <br><br>
+                As the Computer Science and Cybersecurity Club of Oakton High School, we believe that it is our duty to make
+                students feel welcome in the world of STEM and can freely and safely explore the expanses technology. We
+                welcome all students with open arms and ensure that individuals are comfortable, no matter how unfamiliar
+                they are to computers.
+            </p>
+        </div>
+    </div>
+    <div style="margin-top: 75px"></div>
+    <h1 style="text-align: center; font-size: 36px">Links:</h1>
+    <div class="hCarousel" style="justify-content: center;">
+        <div class="hCard iFull" style="--w: 200px">
+            <a href="mailto:hello@oakcsclub.win">
+                <img src="assets/Email-Us.svg" alt="Mail Icon">
+            </a>
+        </div>
+        <div class="hCard iFull" style="--w: 200px">
+            <a href="https://discord.gg/DaJmVaP6yZ">
+                <img src="assets/Discord-Logo.svg" alt="Discord Icon">
+            </a>
+        </div>
+        <div class="hCard iFull" style="--w: 200px">
+            <a href="https://github.com/oaktoncsclub">
+                <img src="assets/GitHub-Mark.svg" alt="Github Icon">
+            </a>
+        </div>
+    </div>
+    <div id="lau" style="position: fixed; right: 10px; bottom: -1000px;">
+        <a href="./lau/index.html">
+            <img src="assets/Lau.png" style="border-radius: 10px; object-fit: cover; width: 100px; height: auto" alt="Lau.jpeg">
+        </a>
+    </div>
+</body>
+</html>
