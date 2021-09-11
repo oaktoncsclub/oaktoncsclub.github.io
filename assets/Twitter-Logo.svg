@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200"
+   height="200"
+   viewBox="0 0 52.916665 52.916668"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="Twitter-Logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="2.1997092"
+     inkscape:cx="133.42673"
+     inkscape:cy="67.508923"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#7137c8;stroke-width:0.687644;stroke-linecap:round"
+       id="rect979"
+       width="52.916668"
+       height="52.916668"
+       x="0"
+       y="0" />
+    <path
+       style="fill:#ffffff;stroke-width:0.264583"
+       inkscape:connector-curvature="0"
+       id="path5"
+       d="m 49.147089,12.385056 c -1.669441,0.74056 -3.463895,1.240848 -5.346837,1.465921 1.921968,-1.152139 3.398324,-2.976541 4.093281,-5.1505775 -1.798992,1.067052 -3.791294,1.8416455 -5.912011,2.2591205 -1.69803,-1.8094295 -4.11756,-2.9397845 -6.795289,-2.9397845 -5.141274,0 -9.309883,4.1681525 -9.309883,9.3094305 0,0.72967 0.08236,1.440283 0.241181,2.121627 -7.737327,-0.388204 -14.597049,-4.094644 -19.1888028,-9.7271305 -0.801367,1.3749385 -1.260589,2.9740435 -1.260589,4.6802405 0,3.229973 1.6435759,6.079456 4.1416077,7.748895 -1.5260452,-0.04833 -2.9615637,-0.467162 -4.2167067,-1.164387 -0.0011,0.0388 -0.0011,0.07782 -0.0011,0.117073 0,4.51053 3.2091019,8.273008 7.4680098,9.128829 -0.781175,0.21282 -1.603642,0.326491 -2.452658,0.326491 -0.59989,0 -1.1829894,-0.05854 -1.7515711,-0.16699 1.1848071,3.698497 4.6228371,6.390066 8.6968331,6.464938 -3.186184,2.497127 -7.200281,3.985511 -11.5621988,3.985511 -0.751454,0 -1.492467,-0.04424 -2.220778,-0.130235 4.1200547,2.641655 9.0135678,4.182903 14.2710108,4.182903 17.123897,0 26.488234,-14.185699 26.488234,-26.488461 0,-0.403633 -0.0091,-0.804998 -0.027,-1.204545 1.81873,-1.31232 3.396962,-2.951813 4.645073,-4.818869 z" />
+  </g>
+</svg>

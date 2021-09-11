@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
+    tab-size: 2;
     line-height: 1;
 }
 ol, ul {
@@ -53,8 +54,8 @@ table {
     --text-color: black;
     --grey-color: grey;
     --bg-color: white;
-    --accent-primary: #a6213c;
-    --accent-primary-dark: #2e7d43;
+    --accent-primary:  #de5470;
+    --accent-primary-dark: #a6213c;
     --accent-secondary: #1a67db;
 }
 /*Set up body colors/text*/
@@ -141,7 +142,7 @@ a:visited {
 .hCarousel {
     --h: 100px; /*Defaults to 40% of a users screen height*/
     display: flex;
-    max-height: calc(600px - 10vw); /*todo mostly works but when screen gets really big starts to create problems*/
+    /*max-height: calc(600px - 10vw); !*todo mostly works but when screen gets really big starts to create problems*!*/
 }
 .hCard {
     --w: 20%; /*defaults to 20% width, user can pass in any width value they want*/
@@ -174,4 +175,34 @@ a:visited {
 /*Selects every card that's inside a spacing element with an animate attribute*/
 .hCarousel.aSlide > .hCard {
     position: relative;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #242424;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    display: none;
+    overflow: hidden;
+}
+
+.collapsible h1::after {
+    content: '+'; /* Unicode character for "plus" sign (+) */
+    float: right;
+    margin-left: 5px;
+}
+
+.active h1::after {
+    content: "-"; /* Unicode character for "minus" sign (-) */
 }

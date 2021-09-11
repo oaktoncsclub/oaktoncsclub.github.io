@@ -16,6 +16,20 @@
         document.getElementById("location").innerHTML = data.loc;
         document.getElementById("description").innerHTML = data.description;
 
+        //colapsible copy/pasted
+        let coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+
         let element = document.getElementById("logo");
         let original = "Oakton CSCS Club";
         let pos = 0;
@@ -64,7 +78,7 @@
         }, 60);
     </script>
     <div class="hCarousel" style="justify-content: center;">
-        <div class="hCard cPrimary" style="text-align: center; --w: 50%;">
+        <div class="hCard cPrimary" style="text-align: center; --w: 50%; background-color: #a6213c">
             <h1>
                 Next Meeting:
             </h1>
@@ -117,24 +131,88 @@
         </div>
     </div>
     <div style="margin-top: 75px"></div>
-    <h1 style="text-align: center; font-size: 36px">Links:</h1>
+    <h1 style="text-align: center; font-size: 36px">Quick Links:</h1>
     <div class="hCarousel" style="justify-content: center;">
         <div class="hCard iFull" style="--w: 200px">
-            <a href="mailto:hello@oakcsclub.win">
+            <a href="https://bitly.ws/9IBB/">
                 <img src="assets/Email-Us.svg" alt="Mail Icon">
             </a>
         </div>
         <div class="hCard iFull" style="--w: 200px">
-            <a href="https://discord.gg/DaJmVaP6yZ">
+            <a href="https://discord.gg/DaJmVaP6yZ/">
                 <img src="assets/Discord-Logo.svg" alt="Discord Icon">
             </a>
         </div>
         <div class="hCard iFull" style="--w: 200px">
-            <a href="https://github.com/oaktoncsclub">
+            <a href="https://github.com/oaktoncsclub/">
                 <img src="assets/GitHub-Mark.svg" alt="Github Icon">
             </a>
         </div>
+        <div class="hCard iFull" style="--w: 200px">
+            <a href="https://twitter.com/oaktoncscs">
+                <img src="assets/Twitter-Logo.svg" alt="Github Icon">
+            </a>
+        </div>
+        <div class="hCard iFull" style="--w: 200px">
+            <a href="https://www.instagram.com/oaktoncscs/">
+                <img src="assets/Insta-Logo-2.svg" alt="Github Icon">
+            </a>
+        </div>
     </div>
+    <div style="margin-top: 75px"></div>
+    <h1 style="text-align: center; font-size: 36px">Not-So-Quick Links:</h1>
+    <div class="hCarousel" style="align-items: center; flex-direction: column">
+        <div class="hCard collapsible" style="--w: 70%; justify-self: center">
+            <h1>
+                Java Beginners / AP CSA
+            </h1>
+        </div>
+        <div class="hCard content" style="--w: 70%; justify-self: center;">
+            <h2>
+                <a href="https://runestone.academy">Runestone Academy</a> - A free resource with great supplemental lessons and practice for each unit as well as the AP exam (Mr. Lau recommends it)
+                <br><br>
+                <a href="https://blog.penjee.com/ap-computer-science-a-exam-questions-by-topic/">Previous AP Exams</a> - Free response questions from previously administered AP Computer Science A exams
+                <br><br>
+                <a href="https://codingbat.com/java">Coding Bat</a> - Practice Java concepts with many practice problems. Gives hints and tests your code
+                <br><br>
+                <a href="https://stackoverflow.com">Stack Overflow</a> - Find answers to programming questions - literally anything & everything
+            </h2>
+        </div>
+
+        <div class="hCard collapsible" style="--w: 70%; justify-self: center">
+            <h1>
+                Python Courses / Tutorials for Beginners
+            </h1>
+        </div>
+        <div class="hCard content" style="--w: 70%; justify-self: center;">
+            <h2>
+                <a href="https://www.udemy.com/course/complete-python-bootcamp/">Udemy Python Bootcamp</a>
+                <br><br>
+                <a href="https://www.codecademy.com/learn/learn-python-3/">Code Academy Beginner's Python Course</a>
+                <br><br>
+                <a href="https://www.udemy.com/course/python-the-complete-python-developer-course/">Udemy Python Masterclass</a>
+                <br><br>
+                <a href="https://www.udemy.com/course/the-python-mega-course/">Udemy 10 Real Applications in Python</a>
+                <br><br>
+                <a href="https://www.udemy.com/course/python-video-workbook/">Udemy 100 Python Exercises</a>
+                <br><br>
+                <a href="https://www.udemy.com/course/the-python-bible/">Udemy Everything You Need to Know to Program in Python</a>
+                <br><br>
+                <a href="https://www.coursera.org/specializations/python">Coursera Python for Everybody Specialization</a>
+                <br><br>
+                <a href="https://developers.google.com/edu/python/">Google's Beginner Python Course</a>
+                <br><br>
+                <a href="https://pymbook.readthedocs.io/en/latest/index.html">Simple Python Course</a>
+                <br><br>
+                <a href="https://youtu.be/_uQrJ0TkZlc">Python Tutorial - Python for Beginners [Full Course]</a>
+                <br><br>
+                <a href="https://www.youtube.com/watch?v=FfWpgLFMI7w">Makes games with Pygame</a>
+                <br><br>
+                <a href="https://www.codecademy.com/learn/paths/computer-science">Codecademy Computer Science Career Path</a>
+            </h2>
+        </div>
+    </div>
+
     <div id="lau" style="position: fixed; right: 10px; bottom: -1000px;">
         <a href="./lau/index.html">
             <img src="assets/Lau.png" style="border-radius: 10px; object-fit: cover; width: 100px; height: auto" alt="Lau.jpeg">
