@@ -1,3 +1,3 @@
-export var time = "No Meeting This Week";
-export var loc = "Eating Turkey";
-export var description = "Have a nice break!";
+export var time = "Wednesday 3-4pm";
+export var loc = "Location:TDB";
+export var description = "Advent of Code!";
