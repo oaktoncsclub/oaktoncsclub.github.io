@@ -1,3 +1,3 @@
 export var time = "Wednesday 3-4pm";
-export var loc = "Location:TDB";
+export var loc = "TBD";
 export var description = "Advent of Code!";
