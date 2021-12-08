@@ -1,3 +1,3 @@
 export var time = "Wednesday 3-4pm";
-export var loc = "TBD";
-export var description = "TBD";
+export var loc = "Mr Larson's Room 1707";
+export var description = "CTF Activity";
