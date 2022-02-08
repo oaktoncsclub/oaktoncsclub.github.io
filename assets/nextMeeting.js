@@ -1,3 +1,3 @@
-export var time = "TBD";
+export var time = "Wednesday 3-4";
 export var loc = "TBD";
-export var description = "No meeting week of 1/10, stay safe friends.";
+export var description = "Fun Carson special";
